@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Welcome to MatthewTy — My personal website." />
+  <title>MatthewTy</title>
+
+  <style>
+    /* Reset some default browser styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Poppins", sans-serif;
+      background: linear-gradient(135deg, #111, #1e1e2f);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      text-align: center;
+    }
+
+    header {
+      margin-bottom: 2rem;
+    }
+
+    h1 {
+      font-size: 3rem;
+      letter-spacing: 2px;
+      background: linear-gradient(90deg, #00c6ff, #0072ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    p {
+      font-size: 1.25rem;
+      color: #ccc;
+      max-width: 600px;
+      margin: 0 auto 2rem;
+    }
+
+    a {
+      display: inline-block;
+      text-decoration: none;
+      color: #fff;
+      border: 2px solid #00c6ff;
+      padding: 0.75rem 1.5rem;
+      border-radius: 6px;
+      transition: 0.3s ease;
+    }
+
+    a:hover {
+      background: #00c6ff;
+      color: #000;
+    }
+
+    footer {
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>MatthewTy</h1>
+  </header>
+
+  <main>
+    <p>Hello 👋 I’m Matthew Ty. Welcome to my personal website!</p>
+    <p>Here you’ll find my projects, ideas, and everything I’m working on.</p>
+    <a href="https://github.com/your-username" target="_blank">My GitHub</a>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> MatthewTy. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Automatically update the copyright year
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
